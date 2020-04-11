@@ -1,0 +1,128 @@
+:root {
+--Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    /* border: solid 1px gray; */
+}
+
+body {
+    background-color: var(--Light-Gray);
+    
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.box {
+    width: 635px;
+    height: 475px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.2);
+    
+}
+
+.box__top-side {
+    flex: 0 0 45%;
+    background-color: white;
+    padding: 2.5rem;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.top-side__tittle {
+    color: var(--Cyan);
+}
+.top-side__subtittle {
+    color: var(--Bright-Yellow);
+    margin-top: 1.2rem;
+}
+.top-side__p {
+    color: var(--Grayish-Blue);
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+.box__bottom-side {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 0 0 55%;
+    color: white;
+    
+    
+}
+.bottom-side__subscription {
+    background-color: black;
+    flex: 0 0 50%;
+    border-bottom-left-radius: 7px;
+    background-color: var(--Cyan);
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+    
+}
+.buttom-side__info {
+    padding: 2.5rem;
+    flex: 0 0 50%;
+    background-color:#4abebd;
+    border-bottom-right-radius: 7px;
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+}
+
+.bottom-side__tittle {
+    margin-bottom: 1.2rem;
+    font-size: 1.2em;
+}
+.buttom-side__price {
+    font-size: 2em;
+    font-weight: 700;
+}
+.buttom-side__p {
+    margin-top: .5rem;
+}
+.buttom-side__p--price {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, .5);
+    
+    
+}
+
+.buttom-side__botton {
+    width: 237px;
+    height: 50px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: var(--Bright-Yellow);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.buttom-side__p--left{
+    font-size: .9rem;
+    line-height: 1.5em;
+    
+}
