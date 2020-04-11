@@ -80,7 +80,7 @@ body {
     padding-left: 2.5rem;
     
 }
-.buttom-side__info {
+.bottom-side__info {
     padding: 2.5rem;
     flex: 0 0 50%;
     background-color:#4abebd;
@@ -93,14 +93,14 @@ body {
     margin-bottom: 1.2rem;
     font-size: 1.2em;
 }
-.buttom-side__price {
+.bottom-side__price {
     font-size: 2em;
     font-weight: 700;
 }
-.buttom-side__p {
+.bottom-side__p {
     margin-top: .5rem;
 }
-.buttom-side__p--price {
+.bottom-side__p--price {
     font-size: 1rem;
     font-weight: 400;
     color: rgba(255, 255, 255, .5);
@@ -108,7 +108,7 @@ body {
     
 }
 
-.buttom-side__botton {
+.bottom-side__button {
     width: 237px;
     height: 50px;
     border-style: none;
@@ -119,9 +119,15 @@ body {
     font-weight: 700;
     margin-top: 2rem;
     box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
-.buttom-side__p--left{
+.bottom-side__button:hover {
+    
+    transform: scale(1.1);
+}
+
+.bottom-side__p--left{
     font-size: .9rem;
     line-height: 1.5em;
     
