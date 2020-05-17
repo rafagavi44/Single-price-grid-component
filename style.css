@@ -19,71 +19,118 @@ body {
     background-color: var(--Light-Gray);
     font-family: 'Karla', sans-serif;
 }
-
 .container {
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 4rem 0;
+    align-items:center;
+   
 }
 
 .box {
     width: 90%;
-    max-width: 640px;
+    max-width: 650px;
+    margin: 60px auto;
     display: grid;
-    grid-template-columns: 1fr, 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    font-size: 1rem;
+    border-radius: 7px;
+    box-shadow: 3px 5px 20px 0px rgba(76, 87, 94, 0.2);
+    
 }
+.box__community,
+.box__subscription,
+.box__whyus {
+    padding: 8%;
+}
+
 .box__community {
     background-color: white;
-    padding: 1.2em 1.5em 3em;
-    border-top-left-radius: .3em;
-    border-top-right-radius: .3em;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
-.community__tittle {
+.community__tittle{
     color: var(--Cyan);
     font-size: 1.5em;
-    margin-top: 1em;
 }
 .community__subtittle {
     color: var(--Bright-Yellow);
     font-size: 1.2em;
-    margin-top: 1em;
+    margin-top: 20px;
 }
-.community__paragraph {
+.community__paragraph{
     color: var(--Grayish-Blue);
-    font-size: 1em;
-    margin-top: 1em;
     line-height: 1.6em;
+    margin-top: 20px;
 }
+/***************************************/
 
 .box__subscription {
     background-color: var(--Cyan);
     color: white;
-    padding: 1.5em;
 }
-.subscription__tittle {
-    font-size: 1.3em;
+.subscription__tittle{
+    font-size: 1.4em;
 }
 .subscription__price {
-    margin-top: .5em;
     font-size: 2em;
-    
+    margin-top: 20px
 }
 .subscription__price span {
     font-size: 1rem;
+    color: rgba(255, 255, 255, .5);
     font-weight: 400;
-    color: rgba(255, 255, 255,.6);
-    
 }
 .subscription__subtittle {
-    margin-top: 1em;
     font-weight: 400;
+    margin-top: 12px;
 }
 .subscription__botton {
-    margin: 1.2em auto;
-    text-align: center;
-    width: 80%;
+    border-style: none;
+    color: white;
+    background-color: var(--Bright-Yellow);
+    margin-top: 32px;
+    font-weight: 700;
+    font-size: 1em;
+    width: 100%;
+    padding: 16px 0;
+    border-radius: 5px;
+    box-shadow: 3px 5px 20px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.box__whyus{
+    background-color: #4abebd;
+    color: white;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.whyus__paragraph {
+    font-size: 1em;
+    margin-top: 20px;
+    line-height: 1.6em;
+}
+/********************************/
+
+
+@media screen and (min-width: 650px){
+    .box {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr auto;
+    }
+    .box__community{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        padding: 2.5rem;
+    }
+    .box__subscription {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding: 2.5rem;
+        border-bottom-left-radius: 6px;
+    }
+    .box__whyus {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding: 2.5rem;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 6px;
+    }
 }
